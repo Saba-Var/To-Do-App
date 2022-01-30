@@ -11,7 +11,7 @@ const Form = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     if (data.input.trim().length === 0) return;
-    data.setTodo((prevTodo) => [...prevTodo, data.input]);
+    data.setTodo((prevTodo) => [...prevTodo, data.input.trim()]);
     Array.from(document.querySelectorAll("input")).forEach(
       (input) => (input.value = "")
     );
