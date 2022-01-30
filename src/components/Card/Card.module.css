@@ -15,3 +15,13 @@ div::before {
   left: 0;
   z-index: -1;
 }
+@media (max-width: 700px) {
+  div {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 568px) {
+  div {
+    margin-top: 1rem;
+  }
+}

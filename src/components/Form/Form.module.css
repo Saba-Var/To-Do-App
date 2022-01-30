@@ -31,3 +31,46 @@ form {
 .form__container input:focus {
   border: 4px solid rgb(49, 125, 231);
 }
+
+@media (max-width: 700px) {
+  .form__container {
+    gap: 1.8rem;
+  }
+  .form__container label {
+    font-size: 2.4rem;
+  }
+  .form__container input {
+    height: 2.5rem;
+    width: 400px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 568px) {
+  .form__container {
+    gap: 1.5rem;
+  }
+  .form__container label {
+    font-size: 2rem;
+  }
+  .form__container input {
+    height: 2rem;
+    width: 350px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 498px) {
+  .form__container {
+    gap: 1.2rem;
+  }
+  .form__container label {
+    font-size: 1.2rem;
+  }
+  .form__container input {
+    height: 1.6rem;
+    max-width: 220px;
+    font-size: 1.1rem;
+  }
+  .form__container input:focus {
+    border: 2px solid rgb(49, 125, 231);
+  }
+}

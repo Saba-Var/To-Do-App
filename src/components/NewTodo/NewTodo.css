@@ -32,9 +32,7 @@ ul li:hover {
     0 0 80px #11468f;
   border: 1px solid rgba(85, 130, 255, 0.63);
 }
-.hidden {
-  display: none;
-}
+
 ul::before {
   transform: scaleX(0);
   transform-origin: bottom left;
@@ -62,4 +60,45 @@ span {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  ul {
+    gap: 1.4rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  li {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 568px) {
+  ul {
+    gap: 1.2rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  ul li {
+    padding: 6px 12px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 498px) {
+  ul {
+    gap: 1rem;
+    padding: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  ul li {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
 }
